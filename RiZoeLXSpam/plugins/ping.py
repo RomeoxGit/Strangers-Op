@@ -43,7 +43,7 @@ def get_readable_time(seconds: int) -> str:
 @Riz8.on(events.NewMessage(pattern=".bot"))
 @Riz9.on(events.NewMessage(pattern=".bot"))
 @Riz10.on(events.NewMessage(pattern=".bot"))
-async def bote):
+async def bot(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
         text = "Connecting.... To the Server !!"
