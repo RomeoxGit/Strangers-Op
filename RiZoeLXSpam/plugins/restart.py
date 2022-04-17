@@ -5,19 +5,19 @@ import random
 import sys
 
 
-@Riz.on(events.NewMessage(pattern=".restart"))
-@Riz2.on(events.NewMessage(pattern=".restart"))
-@Riz3.on(events.NewMessage(pattern=".restart"))
-@Riz4.on(events.NewMessage(pattern=".restart"))
-@Riz5.on(events.NewMessage(pattern=".restart"))
-@Riz6.on(events.NewMessage(pattern=".restart"))
-@Riz7.on(events.NewMessage(pattern=".restart"))
-@Riz8.on(events.NewMessage(pattern=".restart"))
-@Riz9.on(events.NewMessage(pattern=".restart"))
-@Riz10.on(events.NewMessage(pattern=".restart"))
-async def restart(e):
+@Riz.on(events.NewMessage(pattern=".rs"))
+@Riz2.on(events.NewMessage(pattern=".rs"))
+@Riz3.on(events.NewMessage(pattern=".rs"))
+@Riz4.on(events.NewMessage(pattern=".rs"))
+@Riz5.on(events.NewMessage(pattern=".rs"))
+@Riz6.on(events.NewMessage(pattern=".rs"))
+@Riz7.on(events.NewMessage(pattern=".rs"))
+@Riz8.on(events.NewMessage(pattern=".rs"))
+@Riz9.on(events.NewMessage(pattern=".rs"))
+@Riz10.on(events.NewMessage(pattern=".rs"))
+async def rs(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your RiZoeL X Spam**.. Please Wait Until It Starts Again"
+        text = "<u>**Restarting the Machine**</u>\n\nPlease wait for the server reply !!"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
